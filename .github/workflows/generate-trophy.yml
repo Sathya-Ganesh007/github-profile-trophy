@@ -16,6 +16,9 @@ jobs:
         with:
           deno-version: v1.x
 
+      - name: List src files
+        run: ls -la src/
+
       - name: Make dist folder
         run: mkdir -p dist
 
@@ -26,7 +29,7 @@ jobs:
             --allow-write \
             --allow-read \
             --allow-env \
-            src/main.ts \
+            src/index.ts \
             --username=Sathya-Ganesh007 \
             --output=dist/trophy.svg
         env:
