@@ -26,9 +26,10 @@ jobs:
             --allow-env \
             --allow-read \
             --allow-write \
-            render_svg.ts \
+            ./render_svg.ts \
             Sathya-Ganesh007 \
-            dist
+            ./dist \
+            onedark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
